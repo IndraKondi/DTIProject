@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookonline</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #1A2238;
+        }
+        .main{
+            margin: 150px 300px;
+            border: 2px solid maroon;
+            background-color: aliceblue;
+            color: maroon;
+        }
+        .head{
+            margin-bottom: 30px;
+        }
+        .p1{
+            font-size: 30px;
+            margin-bottom: 1px;
+        }
+        .p2{
+            font-size: 15px;
+            height: fit-content;
+        }
+        button{
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color:indianred;
+            padding: 2px;
+            cursor: pointer;
+        }
+        button:hover{
+            padding: 3px;
+        }
+        .optime{
+            margin-bottom: 30px;
+        }
+        @media only screen and (max-width: 900px){
+            .main{
+                margin: 90px 120px;
+            }
+        }
+        @media only screen and (max-width: 600px){
+            .main{
+                margin: 150px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p class="details">
+            <div class="head">
+               <span class="p1">Dine with us</span><br>
+                <span class="p2">Book a Table</span><br>
+            </div>
+            <button type="button">Click here to make booking</button><br>
+            <div class="optime">
+                Opening times<br>
+            Final food service is at 10pm(9pm Sundays and Bank Holidays)<br>
+            </div>
+            <div class="timings">
+                Monday-Friday: 5pm-11pm<br>
+                Saturday:12pm-11pm<br>
+                Sunday:12pm-10pm<br>
+                All Bank holidays:5pm-12pm
+            </div>
+        </p>
+    </div>
+</body>
+</html>

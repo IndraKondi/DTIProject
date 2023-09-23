@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #204f4c;
+}
+.navmain{
+    background-color: #051622;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+section nav .logo{
+    cursor: pointer;
+}
+section nav ul{
+    list-style-type: none;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+section nav ul li a:hover{
+    color: brown;
+    border-bottom: 2px solid orangered;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.1s ease-in;
+}
+section nav .icon i{
+    cursor: pointer;
+    color: black;
+    margin-right: 10px;
+    transition: 0.1s linear;
+}
+section nav .icon i:hover{
+    color: orangered;
+}
+section main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    
+}
+section main .maintext h1{
+    position: relative;
+    font-size: 30px;
+    top: -90;
+    left: 20px;
+    color: aliceblue;
+}
+section main .maintext h1 span{
+    color:rgba(0, 0, 0, 0.5);
+    color: darkred;
+    font-family: mv boli;
+    line-height: 50px;
+}
+section main .mainimg img{
+    top: 120px;
+    border-radius: 50px;
+    position: relative;
+    left: 70px;
+    clear: right;
+    z-index: 99;
+}
+section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 30px;
+    right: 700px;
+    top: -70px;
+    clear: right;
+    color: aliceblue;
+}
+.orderbut{
+    
+    width: 120px;
+    top: -40px;
+    left: 200px;
+    position: relative;
+    border-radius: 20px;
+}
+.orderbut a{
+    text-decoration: none;
+    padding: 2px 1px;
+    color: aliceblue;
+}
+.orderbut a button{
+    background: rgb(183, 35, 70);
+    padding: 10px;
+    border-radius: 15px;
+}
+.orderbut i{
+    color: bisque;
+    transition: 0.1s linear;
+}
+.orderbut:hover i{
+    transform: translateX(10px);
+}
+.about{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #141414;
+    border-radius: 20px;
+    height: 70vh;
+}
+.about h2{
+    padding-top: 20px;
+    color: azure;
+}
+.about h2 center{
+    font-family: mv boli;
+}
+div.steps{
+    margin-top: 30px;
+    left: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+div.step{
+    margin: 10px 30px;
+    box-shadow: 0 8px 16px 0 rgba(213, 14, 220, 0.701);
+    width: 300px;
+}
+div .step img{
+    width: 300px;
+    height: 200px;
+    align-self: center;
+    border-bottom: 3px solid black;
+    background-color:aliceblue;
+}
+div .process{
+    padding: 10px 15px;
+    background-color: aliceblue;
+}
+@media only screen and (max-width: 600px) 
+{
+    body {
+      background-color: lightblue;
+    }
+    nav{
+        position: relative;
+    }
+    section main{
+        top: 50px;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        height: 50vh;
+    }
+    section main .maintext h1{
+        display: grid;
+        place-items: center;
+    }
+    section main .mainimg img{
+        display: none;
+    }
+    section navmain{
+        position: fixed;
+    }
+    section p{
+        top: -20px;
+        position: initial;
+        padding: 5px 10px;
+        width: auto;
+      
+    }
+    .orderbut{
+        position: fixed;
+    }
+    div.steps{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about{
+        height: 180vh;
+    }
+}
